@@ -1,11 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-        
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Developer - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="cursor-dot"></div>
+      <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Portfolio</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#certifications" class="nav-link">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="particles"></div>
+        <div class="animated-bg">
+          <div class="gradient-orb orb-1"></div>
+          <div class="gradient-orb orb-2"></div>
+          <div class="gradient-orb orb-3"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hi, I'm</span>
+          <span class="hero-name">
+            <span class="typing-text" data-text="Shopify Developer"></span>
+            <span class="cursor-blink">|</span>
+          </span>
+        </h1>
+        <p class="hero-subtitle">Shopify & E-commerce Specialist</p>
+        <p class="hero-description">
+          Transforming businesses with custom Shopify solutions, theme
+          development, and e-commerce optimization
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary magnetic-btn">
+            <span>View My Work</span>
+            <div class="btn-ripple"></div>
+          </a>
+          <a href="#contact" class="btn btn-secondary magnetic-btn">
+            <span>Get In Touch</span>
+            <div class="btn-ripple"></div>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              Hi! I'm Ankit, a web developer passionate about building
+              high-performing Shopify and eCommerce solutions. I specialize in
+              creating seamless, scalable, and conversion-focused online stores
+              using modern web technologies. With hands-on 3+ years experience and worked on 20+ projects
+              in development, automation, and data-driven strategies, I help
+              brands launch and optimize their digital presence — from custom
+              Shopify themes to third-party app integrations and complete store
+              migrations. Currently, I'm expanding my frontend skill set by
+              learning Full stack Dev, allowing me to build even more dynamic
+              and personalized user experiences. I’m always eager to collaborate
+              on impactful projects. Let’s connect and build something awesome
+              together.
+            </p>
+            <!-- <div class="journey-timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h4>BE Information Technology</h4>
+                  <span>2018-2022</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h4>Web Development Internship</h4>
+                  <span>2021</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h4>Dear Digital - Junior Developer</h4>
+                  <span>2022-Present</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+          <div class="timeline-line"></div>
+          <div class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <div class="experience-date">2022 - Present (3.4 years)</div>
+              <h3>Junior Developer</h3>
+              <h4>Dear Digital</h4>
+              <ul>
+                <li>
+                  Specialized in theme customization, performance optimization,
+                  and Shopify settings
+                </li>
+                <li>
+                  Delivered comprehensive e-commerce solutions and collaborated
+                  closely with clients
+                </li>
+                <li>
+                  Provided accurate task estimations, plan development roadmaps,
+                  and clear, actionable guidance
+                </li>
+                <li>
+                  Expert in Shopify Plus, theme development, creating,
+                  modifying, and optimizing Shopify themes
+                </li>
+                <li>
+                  Handled branch management, code reviews, and deployments using
+                  Shopify theme setup
+                </li>
+                <li>
+                    Enhancing UX and responsive design
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <div class="experience-date">2021 (5 months)</div>
+              <h3>Developer Intern</h3>
+              <h4>Dear Digital</h4>
+              <ul>
+                <li>Gained expertise in Web development fundamentals</li>
+                <li>
+                  Learned theme customization and e-commerce best practices
+                </li>
+                <li>
+                    Started as an intern and transitioned to a full-time role
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-marker"></div>
+            <div class="experience-content">
+              <div class="experience-date">2018 - 2022</div>
+              <h3>BE Information Technology</h3>
+              <h4>
+                Vidyavardhini's College of Engineering & Technology (MU)
+                CGPA-7.86
+              </h4>
+              <ul>
+                <li>
+                  Comprehensive study of programming, web development, and
+                  software engineering
+                </li>
+                <li>
+                  Specialized in Logical and Analytical thinking and problem solving
+                </li>
+                <li>
+                  Developed strong foundation in computer science principles
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Shopify Plus Store"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://www.jeunepremier.com/"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-shopify"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Shopify Plus Store</h3>
+              <p>
+                Premium school bags & backpacks store for Belgian company,
+                combining first-class design with high quality
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Shopify Plus</span>
+                <span class="tech-tag">Liquid</span>
+                <span class="tech-tag">Theme Development</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Custom Shopify Store"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://david-gotlib.com/"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-shopify"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>David Gotlib - Luxury Cufflinks</h3>
+              <p>
+                Premium Belgian cufflinks store featuring elegant design, custom theme development, and performance optimization for luxury shopping experience
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Shopify</span>
+                <span class="tech-tag">Custom Theme</span>
+                <span class="tech-tag">Performance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Food Prepper Store"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://foodprepper.be/"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-shopify"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Food Prepper - Meal Delivery</h3>
+              <p>
+                Modern meal delivery platform with subscription functionality, custom ordering system, and membership features for healthy meal planning
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Shopify</span>
+                <span class="tech-tag">Subscriptions</span>
+                <span class="tech-tag">Custom API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Curl Studio"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://curlstudio.be/"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-shopify"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Curl Studio - Beauty Salon</h3>
+              <p>
+                Professional beauty salon platform specializing in curl treatments with integrated booking system, service scheduling, and custom treatment recommendations
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Shopify</span>
+                <span class="tech-tag">Booking System</span>
+                <span class="tech-tag">Custom Features</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+      <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-categories">
+          <div class="tech-category">
+            <h3>E-commerce</h3>
+            <div class="tech-icons">
+              <div class="tech-icon" data-tooltip="Shopify">
+                <i class="fab fa-shopify"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Shopify Plus">
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Liquid">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Theme Development">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Migration Setup">
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>Frontend</h3>
+            <div class="tech-icons">
+              <div class="tech-icon" data-tooltip="React">
+                <i class="fab fa-react"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="JavaScript">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="TypeScript">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="HTML5">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="CSS3">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Tailwind CSS">
+                <i class="fas fa-wind"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Vue.js">
+                <i class="fab fa-vuejs"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Next.js">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>Skills & Tools</h3>
+            <div class="tech-icons">
+              <div class="tech-icon" data-tooltip="SEO">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Analytics">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Git">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Team Leadership">
+                <i class="fas fa-users"></i>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications & Courses</h2>
+        <p class="section-subtitle">
+          Professional credentials and continuous learning achievements
+        </p>
+        <div class="certifications-grid">
+          <div class="certification-card stagger-item featured-cert">
+            <div class="cert-badge">
+              <span class="badge-text">Official</span>
+            </div>
+            <div class="cert-icon">
+              <i class="fab fa-shopify"></i>
+            </div>
+            <div class="cert-content">
+              <h3>Shopify Foundations Certification</h3>
+              <p class="cert-issuer">Issued by Shopify</p>
+              <p class="cert-description">
+                Comprehensive certification covering Shopify fundamentals,
+                platform features, theme development, and e-commerce best
+                practices. Validates expertise in building and customizing
+                Shopify stores.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-badge">Shopify Platform</span>
+                <span class="skill-badge">Liquid Templating</span>
+                <span class="skill-badge">E-commerce</span>
+              </div>
+              <a
+                href="https://www.credly.com/badges/7406f7b6-e391-4aaf-af56-1a1a13625272/public_url"
+                target="_blank"
+                class="cert-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="certification-card stagger-item">
+            <div class="cert-badge">
+              <span class="badge-text">Completed</span>
+            </div>
+            <div class="cert-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="cert-content">
+              <h3>Web Development Masterclass</h3>
+              <p class="cert-issuer">Udemy</p>
+              <p class="cert-description">
+                Advanced web development course covering modern technologies,
+                frameworks, responsive design, and full-stack development
+                principles. Comprehensive training in contemporary web
+                development practices.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Responsive Design</span>
+              </div>
+              <a
+                href="https://www.udemy.com/certificate/UC-37683116-34af-4170-8b69-525f23b83267/"
+                target="_blank"
+                class="cert-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>
+              Experienced Web Developer ready for new challenges. Let's create
+              amazing e-commerce experiences together!
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <span>ankitchaudhary272001@gmail.com</span>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-briefcase"></i>
+                <span>+91-8805037422</span>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Mumbai, India</span>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-briefcase"></i>
+                <span>3.4+ Years Experience</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/ankit-chaudhary-b51012186/"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/ankit55555" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://x.com/Ankit12731588" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/not_the_invadour/"
+                class="social-link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Shopify Developer Portfolio. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <h3 id="modal-title">Project Title</h3>
+          <img id="modal-image" src="" alt="Project Image" />
+          <p id="modal-description">Project description goes here...</p>
+          <div id="modal-tech" class="project-tech"></div>
+          <div class="modal-links">
+            <a id="modal-live" href="#" class="btn btn-primary" target="_blank"
+              >Live Demo</a
+            >
+            <a
+              id="modal-github"
+              href="#"
+              class="btn btn-secondary"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
