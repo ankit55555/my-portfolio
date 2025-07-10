@@ -581,7 +581,7 @@ function initTypingAnimation() {
     const typingElement = document.querySelector('.typing-text');
     if (!typingElement) return;
     
-    const texts = ['Web Developer'];
+    const texts = ['Web Developer' , 'Front End Developer' , 'Shopify Expert' , 'UI/UX Designer' , 'SEO Expert' ];
     const cursor = document.querySelector('.cursor-blink');
     
     let textIndex = 0;
