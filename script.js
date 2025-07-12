@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initScrollAnimations();
     initSkillBars();
-    initProjectModals();
+
     initContactForm();
     initParticles();
     initSmoothScrolling();
@@ -111,93 +111,7 @@ function initSkillBars() {
     });
 }
 
-// Project modal functionality
-function initProjectModals() {
-    const projectCards = document.querySelectorAll('.project-card');
-    const modal = document.getElementById('project-modal');
-    const closeModal = document.querySelector('.close-modal');
-    
-    // Project data with real Shopify projects
-    const projectData = {
-        0: {
-            title: "Shopify Plus Store - Jeune Premier",
-            image: "https://via.placeholder.com/800x400",
-            description: "Premium school bags & backpacks e-commerce store for a Belgian company. Built with Shopify Plus featuring custom theme development, advanced product filtering, and optimized performance. The store combines first-class design with high-quality functionality, including multi-language support and advanced inventory management.",
-            tech: ["Shopify Plus", "Liquid", "Theme Development", "Performance Optimization", "Multi-language"],
-            liveUrl: "https://www.jeunepremier.com/",
-            githubUrl: "#"
-        },
-        1: {
-            title: "Custom Shopify Store - David Gotlib",
-            image: "https://via.placeholder.com/800x400",
-            description: "Luxury Cufflinks store for a Belgian based company featuring custom theme development and performance optimization. Implemented advanced product customization features, elegant design, and seamless checkout experience. The store includes custom product configurators and premium brand presentation.",
-            tech: ["Shopify", "Custom Theme", "Performance Optimization", "Custom Features", "Luxury Design"],
-            liveUrl: "https://david-gotlib.com/",
-            githubUrl: "#"
-        },
-        2: {
-            title: "Food Prepper - E-commerce Platform",
-            image: "https://via.placeholder.com/800x400",
-            description: "Ready-to-eat food ordering platform with custom functionality and membership system. Built comprehensive e-commerce solution with subscription management, meal planning features, and automated delivery scheduling. Includes custom dashboard for members and advanced order management.",
-            tech: ["Shopify", "Custom Development", "Membership System", "Subscriptions", "Order Management"],
-            liveUrl: "https://foodprepper.be/",
-            githubUrl: "#"
-        },
-        3: {
-            title: "Curl Studio - Beauty Salon Platform",
-            image: "https://via.placeholder.com/800x400",
-            description: "Beauty salon platform specializing in curl treatments with integrated booking system. Developed custom appointment scheduling, service management, and customer consultation features. The platform provides advice and tailor-made treatments with seamless user experience.",
-            tech: ["Shopify", "Booking System", "Custom Features", "Service Management", "Customer Portal"],
-            liveUrl: "https://curlstudio.be/",
-            githubUrl: "#"
-        }
-    };
 
-    projectCards.forEach((card, index) => {
-        card.addEventListener('click', () => {
-            const project = projectData[index];
-            if (project) {
-                document.getElementById('modal-title').textContent = project.title;
-                document.getElementById('modal-image').src = project.image;
-                document.getElementById('modal-description').textContent = project.description;
-                document.getElementById('modal-live').href = project.liveUrl;
-                document.getElementById('modal-github').href = project.githubUrl;
-                
-                // Update tech tags
-                const techContainer = document.getElementById('modal-tech');
-                techContainer.innerHTML = '';
-                project.tech.forEach(tech => {
-                    const tag = document.createElement('span');
-                    tag.className = 'tech-tag';
-                    tag.textContent = tech;
-                    techContainer.appendChild(tag);
-                });
-                
-                modal.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-            }
-        });
-    });
-
-    // Close modal functionality
-    closeModal.addEventListener('click', closeModalFunc);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModalFunc();
-        }
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            closeModalFunc();
-        }
-    });
-
-    function closeModalFunc() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
 
 // Contact form validation and submission
 function initContactForm() {
