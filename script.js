@@ -19,21 +19,33 @@ document.addEventListener('DOMContentLoaded', function() {
 // Navigation functionality
 function initNavigation() {
     const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    const mobileNav = document.querySelector('.mobile-nav');
     const navLinks = document.querySelectorAll('.nav-link');
     const navbar = document.querySelector('.navbar');
 
     // Mobile menu toggle
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
+        mobileNav.classList.toggle('active');
     });
 
     // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            mobileNav.classList.remove('active');
+        });
+    });
+
+    // Mobile dropdown functionality - disabled for mobile
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            // Only handle click on desktop, not mobile
+            if (window.innerWidth <= 768) {
+                // On mobile, allow normal navigation
+                return;
+            }
         });
     });
 
@@ -70,7 +82,7 @@ function initNavigation() {
 
 // Scroll animations using Intersection Observer
 function initScrollAnimations() {
-    const animateElements = document.querySelectorAll('.section-title, .timeline-item, .skill-item, .project-card, .experience-item, .tech-category, .certification-card, .stagger-item');
+    const animateElements = document.querySelectorAll('.section-title, .timeline-item, .skill-item, .project-card, .experience-item, .education-item, .tech-category, .certification-card, .stagger-item');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

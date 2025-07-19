@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopify Developer - Portfolio</title>
+    <title>Ankit's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -39,7 +39,8 @@
         <div class="nav-logo">
           <a href="#home">Ankit's Portfolio</a>
         </div>
-        <ul class="nav-menu">
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu desktop-nav">
           <li class="nav-item">
             <a href="#home" class="nav-link">Home</a>
           </li>
@@ -47,10 +48,37 @@
             <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#experience" class="nav-link dropdown-toggle">Background <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#experience" class="dropdown-link">Experience</a></li>
+              <li><a href="#education" class="dropdown-link">Education</a></li>
+              <li><a href="#certifications" class="dropdown-link">Certifications</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <ul class="nav-menu mobile-nav">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Work</a>
           </li>
           <li class="nav-item">
             <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
           </li>
           <li class="nav-item">
             <a href="#certifications" class="nav-link">Certifications</a>
@@ -85,10 +113,9 @@
             <span class="cursor-blink">|</span>
           </span>
         </h1>
-        <p class="hero-subtitle">Shopify & E-commerce Specialist</p>
+        <!-- <p class="hero-subtitle">Front-End Developer | Shopify Expert | eCommerce Specialist</p> -->
         <p class="hero-description">
-          Transforming businesses with custom Shopify solutions, theme
-          development, and e-commerce optimization
+          Crafting seamless website experiences with clean code, smart design, and high-performing eCommerce solutions.
         </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary magnetic-btn">
@@ -113,18 +140,25 @@
         <div class="about-content">
           <div class="about-text">
             <p class="about-description">
-              Hi! I'm Ankit, a web developer passionate about building
-              high-performing Shopify and eCommerce solutions. I specialize in
-              creating seamless, scalable, and conversion-focused online stores
-              using modern web technologies. With hands-on 3+ years experience and worked on 15+ projects
-              in development, automation, and data-driven strategies, I help
-              brands launch and optimize their digital presence ,from custom
-              Shopify themes to third-party app integrations and complete store
-              migrations. Currently, I'm expanding my frontend skill set by
-              learning Full stack Dev, allowing me to build even more dynamic
-              and personalized user experiences. I’m always eager to collaborate
-              on impactful projects. Let’s connect and build something awesome
-              together.
+              👋 Hi, I'm Ankit<br>
+              <strong>Front-End Developer | Shopify Expert | eCommerce Specialist</strong><br>
+
+              I craft fast, scalable, and conversion-driven online stores using modern web technologies and intelligent tooling. With 3+ years of hands-on experience and 15+ completed projects, I specialize in:
+
+              Custom Shopify theme development
+
+              Performance optimization & SEO
+
+              Third-party app integrations
+
+              Store setup, automation & migration
+
+              I actively leverage AI-powered tools to enhance my workflows from automating repetitive tasks and optimizing code to analyzing user behavior, improving SEO strategies, and speeding up development. This enables me to deliver smarter, more efficient solutions for brands.
+
+              Currently, I’m expanding into Full Stack Development (React, Next.js, Node.js) to build even more dynamic, personalized, and API-driven experiences.
+
+              If you're looking to elevate your store or bring a high-performing web project to life<br>
+              Let’s build something awesome together.
             </p>
             <!-- <div class="journey-timeline">
               <div class="timeline-item">
@@ -165,30 +199,37 @@
             <div class="experience-content">
               <div class="experience-date">July 2022 - Present (3.1 years)</div>
               <h3>Front End Developer</h3>
-              <h4>Dear Digital</h4>
+              <h4><a href="https://deardigital.com" target="_blank" rel="noopener noreferrer" class="company-link">Dear Digital</a></h4>
               <ul>
                 <li>
-                  Specialized in theme customization, performance optimization,
-                  and Shopify settings
+                  Specialized in Shopify Plus theme development, customization, and performance optimization using web development expertise.
                 </li>
                 <li>
-                  Delivered comprehensive e-commerce solutions and collaborated
-                  closely with clients
+                  Delivered end-to-end eCommerce solutions with a strong focus on responsive UI, accessibility, and conversion-driven UX.
                 </li>
                 <li>
-                  Provided accurate task estimations, plan development roadmaps,
-                  and clear, actionable guidance
+                  Proficient in modern front-end frameworks such as React.js and Next.js for building dynamic components, custom apps, and headless storefronts.
                 </li>
                 <li>
-                  Expert in Shopify Plus, theme development, creating,
-                  modifying, and optimizing Shopify themes
+                  Integrated and customized third-party APIs, Shopify apps, and tools to extend store functionality and improve user engagement.
                 </li>
                 <li>
-                  Handled branch management, code reviews, and deployments using
-                  Shopify theme setup
+                  Applied SEO best practices, structured data, lazy loading, and performance optimizations for higher search visibility and faster load times.
                 </li>
                 <li>
-                    Enhancing UX and responsive design
+                  Set up and maintained Google Analytics (GA4), Facebook Pixel, and conversion tracking, providing actionable insights from user behavior.
+                </li>
+                <li>
+                  Collaborated directly with designers, marketers, and back-end teams to align technical solutions with business goals.
+                </li>
+                <li>
+                  Hands-on with Git, GitHub, CLI-based deployment, and Shopify GitHub integration for efficient theme versioning and code management.
+                </li>
+                <li>
+                  Experienced with CMS platforms, JavaScript ES6+, DOM manipulation, and frontend performance tools like Lighthouse, PageSpeed Insights, and Hotjar.
+                </li>
+                <li>
+                  Provided technical guidance, accurate task estimates, and sprint planning support in Agile environments.
                 </li>
               </ul>
             </div>
@@ -199,7 +240,7 @@
             <div class="experience-content">
               <div class="experience-date">2021 (5 months)</div>
               <h3>Developer Intern</h3>
-              <h4>Dear Digital</h4>
+              <h4><a href="https://deardigital.com" target="_blank" rel="noopener noreferrer" class="company-link">Dear Digital</a></h4>
               <ul>
                 <li>Gained expertise in Web development fundamentals</li>
                 <li>
@@ -233,15 +274,23 @@
               </ul>
             </div>
           </div>
-          <div class="experience-item">
-            <div class="experience-marker"></div>
-            <div class="experience-content">
-              <div class="experience-date">2018 - 2022</div>
-              <h3>BE Information Technology</h3>
-              <h4>
-                Vidyavardhini's College of Engineering & Technology (MU)
-                CGPA-7.86
-              </h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+          <div class="timeline-line"></div>
+          <div class="education-item">
+            <div class="education-marker"></div>
+            <div class="education-content">
+              <div class="education-date">2018 - 2022</div>
+              <h3>Bachelor of Engineering - Information Technology</h3>
+              <h4>Vidyavardhini's College of Engineering & Technology (Mumbai University)</h4>
+              <div class="education-grade">CGPA: 7.86</div>
               <ul>
                 <li>
                   Comprehensive study of programming, web development, and
@@ -256,7 +305,6 @@
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -420,7 +468,7 @@
               </div>
             </div>
             <div class="project-content">
-              <h3>Dear Digital - Company Website</h3>
+              <h3><a href="https://deardigital.com" target="_blank" rel="noopener noreferrer" class="company-link">Dear Digital</a> - Company Website</h3>
               <p>
                 Modern digital agency website featuring custom forms flow, advanced filtering system for blog content, and responsive design for showcasing services and portfolio
               </p>
@@ -458,6 +506,12 @@
               <div class="tech-icon" data-tooltip="Migration Setup">
                 <i class="fas fa-exchange-alt"></i>
               </div>
+              <div class="tech-icon" data-tooltip="WordPress">
+                <i class="fab fa-wordpress"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="CMS Development">
+                <i class="fas fa-cogs"></i>
+              </div>
             </div>
           </div>
 
@@ -494,7 +548,7 @@
               <div class="tech-icon" data-tooltip="SEO">
                 <i class="fas fa-search"></i>
               </div>
-              <div class="tech-icon" data-tooltip="Analytics">
+              <div class="tech-icon" data-tooltip="Web Analytics">
                 <i class="fas fa-chart-line"></i>
               </div>
               <div class="tech-icon" data-tooltip="Git">
@@ -505,6 +559,9 @@
               </div>
               <div class="tech-icon" data-tooltip="Team Leadership">
                 <i class="fas fa-users"></i>
+              </div>
+              <div class="tech-icon" data-tooltip="Project Management">
+                <i class="fas fa-tasks"></i>
               </div>
               </div>
             </div>

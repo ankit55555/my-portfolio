@@ -72,6 +72,15 @@ body {
     gap: 2rem;
 }
 
+/* Show desktop nav by default, hide mobile nav */
+.desktop-nav {
+    display: flex;
+}
+
+.mobile-nav {
+    display: none;
+}
+
 .nav-link {
     text-decoration: none;
     color: #64748b;
@@ -97,6 +106,64 @@ body {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-toggle i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #64748b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.dropdown-link:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+    padding-left: 1.25rem;
 }
 
 .hamburger {
@@ -818,6 +885,29 @@ section {
     margin-bottom: 1rem;
 }
 
+.company-link {
+    color: #64748b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.company-link:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.company-link::after {
+    content: ' 🔗';
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.company-link:hover::after {
+    opacity: 1;
+}
+
 .experience-content ul {
     list-style: none;
     padding: 0;
@@ -837,6 +927,101 @@ section {
     left: 0;
     color: #2563eb;
     font-weight: bold;
+}
+
+/* Education Section */
+.education {
+    background: #fff;
+}
+
+.education-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s ease;
+}
+
+.education-item.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.education-marker {
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #7c3aed;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #e2e8f0;
+}
+
+.education-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #7c3aed;
+}
+
+.education-date {
+    color: #7c3aed;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-content h3 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+}
+
+.education-content h4 {
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.education-grade {
+    display: inline-block;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.education-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-content li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.education-content li::before {
+    content: '📚';
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
 }
 
 /* Tech Stack Section */
@@ -1394,6 +1579,15 @@ section {
         display: flex;
     }
 
+    /* Hide desktop nav, show mobile nav */
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1423,6 +1617,8 @@ section {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+
 
     .hero-title {
         font-size: 2.5rem;
@@ -1495,6 +1691,14 @@ section {
     }
 
     .experience-marker {
+        left: 0.5rem;
+    }
+
+    .education-item {
+        padding-left: 3rem;
+    }
+
+    .education-marker {
         left: 0.5rem;
     }
 }
