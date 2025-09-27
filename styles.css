@@ -1234,6 +1234,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
+    align-items: start;
 }
 
 .tech-category {
@@ -1241,6 +1242,8 @@ section {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .tech-category.animate {
@@ -1250,15 +1253,28 @@ section {
 
 .tech-category h3 {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     color: #1e293b;
 }
 
 .tech-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem 1.25rem;
+}
+
+@media (max-width: 1024px) {
+    .tech-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .tech-icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .tech-icon {
@@ -2518,3 +2534,87 @@ section {
 .stagger-item:nth-child(4) { transition-delay: 0.4s; }
 .stagger-item:nth-child(5) { transition-delay: 0.5s; }
 .stagger-item:nth-child(6) { transition-delay: 0.6s; } 
+
+/* Compact Projects Layout - overrides for denser cards/grid */
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+}
+
+.project-card {
+    border-radius: 16px;
+}
+
+.project-image {
+    height: 160px;
+}
+
+.project-content {
+    padding: 1.1rem 1.1rem 1rem;
+}
+
+.project-content h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    font-size: 0.92rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-tech {
+    gap: 0.35rem;
+    max-height: 56px;
+    overflow: hidden;
+}
+
+.project-card:hover .project-tech {
+    max-height: 400px;
+}
+
+.tech-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+}
+
+.project-link {
+    width: 44px;
+    height: 44px;
+    font-size: 0.95rem;
+}
+
+/* Tighter hover so the grid stays calm */
+.project-card:hover {
+    transform: translateY(-10px) scale(1.01);
+}
+
+/* Responsive tweaks for compact layout */
+@media (max-width: 1500px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.4rem;
+    }
+    .project-image { height: 170px; }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .project-image { height: 180px; }
+}
